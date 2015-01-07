@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css"></link>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body >
+        <h:form>
+            <p:menubar styleClass="menubar" >
+                <p:submenu icon="appleIcon" styleClass="menubar">
+                    <p:menuitem value="About This Mac" url="#" onclick="" icon="ui-icon ui-icon-info" styleClass="menubar"></p:menuitem>
+                </p:submenu>
+                <p:submenu label="Finder">
+                    <p:menuitem value="About Finder" url="#" styleClass="open" icon="ui-icon ui-icon-info"></p:menuitem>
+                </p:submenu>
+                <p:submenu label="Edit">
+                    <p:menuitem value="Undo" url="#" styleClass="undo" icon="ui-icon ui-icon-arrowreturnthick-1-w"></p:menuitem>
+                    <p:menuitem value="Redo" url="#" styleClass="redo" icon="ui-icon ui-icon-arrowreturnthick-1-e"></p:menuitem>
+                </p:submenu>
+                <p:submenu label="View">
+                    <p:menuitem value="Source" url="#" onclick="PF('source').show();" icon="ui-icon ui-icon-search"></p:menuitem>
+                </p:submenu>
+            </p:menubar>
+            <h:link outcome="welcomePrimefaces" value="Página de boas-vindas do Primefaces" />
+            <p:dock position="top">
+                <p:menuitem value="Finder" icon="/resources/demo/images/mockosx/finder.png" url="#" />
+                <p:menuitem value="Terminal" icon="/resources/demo/images/mockosx/terminal.png" url="#" onclick="PF('terminal').show();"/>
+                <p:menuitem value="Safari" icon="/resources/demo/images/mockosx/safari.png" url="#" />
+                <p:menuitem value="iTunes" icon="/resources/demo/images/mockosx/itunes.png" url="#"/>
+                <p:menuitem value="iChat" icon="/resources/demo/images/mockosx/ichat.png" url="#"/>
+                <p:menuitem value="Trash" icon="/resources/demo/images/mockosx/trash.png" url="#"/>
+            </p:dock>
+        </h:form>
+    </h:body>
+</html>

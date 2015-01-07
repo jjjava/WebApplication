@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/01/2015, 12:09:25
+    Author     : hudson.sales
+*/
+
+.menubar{
+    font-size: 12px;
+    background-color: red;
+}
+.list{
+    background-color: orange;
+}
+.ui-menuitem{
+
+}
+.ui-menuitem-link{
+
+}
+.ui-menuitem-text{
+
+}
+.requiredColor {
+    background-color: lightcoral;
+}
